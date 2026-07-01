@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin | Undergraun</title>
+    <link rel="icon" type="image/png" href="../assets/assets/img/logo.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">Undergraun</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarAdmin" aria-controls="navbarAdmin" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarAdmin">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="login.html">Ingresar</a></li>
+            <li class="nav-item"><a class="nav-link" href="registro.html">Registrarse</a></li>
+            <li class="nav-item"><a class="nav-link" href="recuperar.html">Recuperar</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="admin.html">Admin</a></li>
+            <li class="nav-item"><a class="nav-link" href="cliente.html">Cliente</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container-fluid pt-5">
+      <div class="row">
+        <aside class="col-lg-3 d-none d-lg-block bg-light border-end min-vh-100 pt-4">
+          <div class="px-3">
+            <h5 class="mb-4">Panel Administrativo</h5>
+            <nav class="nav flex-column">
+              <a class="nav-link active" aria-current="page" href="#resumen">Resumen</a>
+              <a class="nav-link" href="#pedidos">Pedidos</a>
+              <a class="nav-link" href="#inventario">Inventario</a>
+              <a class="nav-link" href="cliente.html">Ver tienda</a>
+            </nav>
+          </div>
+        </aside>
+
+        <section class="col-12 col-lg-9 px-4 py-4">
+          <div class="d-flex flex-column flex-md-row justify-content-between align-items-start gap-3 mb-4">
+            <div>
+              <h1 class="h3 mb-1">Dashboard de moda</h1>
+              <p class="text-muted mb-0">Monitorea ventas, pedidos y stock de Undergraun.</p>
+            </div>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#editParticipantModal">
+              <i class="bi bi-pencil-square me-1"></i> Editar pedido
+            </button>
+          </div>
+
+          <div id="resumen" class="row g-3 mb-4">
+            <div class="col-6 col-xl-3">
+              <div class="card shadow-sm h-100">
+                <div class="card-body">
+                  <h6 class="text-uppercase text-secondary mb-3">Pedidos hoy</h6>
+                  <div class="d-flex align-items-center justify-content-between">
+                    <span class="fs-4 fw-bold">1,245</span>
+                    <span class="badge bg-success">+8%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-xl-3">
+              <div class="card shadow-sm h-100">
+                <div class="card-body">
+                  <h6 class="text-uppercase text-secondary mb-3">Ventas</h6>
+                  <div class="d-flex align-items-center justify-content-between">
+                    <span class="fs-4 fw-bold">$98,400</span>
+                    <span class="badge bg-primary">Estable</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-xl-3">
+              <div class="card shadow-sm h-100">
+                <div class="card-body">
+                  <h6 class="text-uppercase text-secondary mb-3">Unidades en stock</h6>
+                  <div class="d-flex align-items-center justify-content-between">
+                    <span class="fs-4 fw-bold">312</span>
+                    <span class="badge bg-warning text-dark">Nuevo</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-xl-3">
+              <div class="card shadow-sm h-100">
+                <div class="card-body">
+                  <h6 class="text-uppercase text-secondary mb-3">Colecciones activas</h6>
+                  <div class="d-flex align-items-center justify-content-between">
+                    <span class="fs-4 fw-bold">14</span>
+                    <span class="badge bg-info text-dark">En curso</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="pedidos" class="card shadow-sm mb-4">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <div>
+                  <h2 class="h5 mb-1">Últimos pedidos</h2>
+                  <p class="text-muted mb-0">Revisa el estado y administra envíos de la tienda.</p>
+                </div>
+                <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#editParticipantModal">
+                  <i class="bi bi-pencil"></i> Editar
+                </button>
+              </div>
+              <div class="table-responsive">
+                <table class="table table-striped table-hover align-middle mb-0">
+                  <thead class="table-light">
+                    <tr>
+                      <th>ID</th>
+                      <th>Cliente</th>
+                      <th>Prenda</th>
+                      <th>Talla</th>
+                      <th>Estado</th>
+                      <th>Acciones</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>001</td>
+                      <td>Ana Serrano</td>
+                      <td>Camiseta Oversize</td>
+                      <td>M</td>
+                      <td><span class="badge bg-success">Entregado</span></td>
+                      <td>
+                        <button class="btn btn-sm btn-outline-secondary me-1" data-bs-toggle="modal" data-bs-target="#editParticipantModal" title="Editar"><i class="bi bi-pencil"></i></button>
+                        <button class="btn btn-sm btn-outline-danger" title="Eliminar"><i class="bi bi-trash"></i></button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>002</td>
+                      <td>Lucas Medina</td>
+                      <td>Hoodie Street</td>
+                      <td>L</td>
+                      <td><span class="badge bg-warning text-dark">Pendiente</span></td>
+                      <td>
+                        <button class="btn btn-sm btn-outline-secondary me-1" data-bs-toggle="modal" data-bs-target="#editParticipantModal"><i class="bi bi-pencil"></i></button>
+                        <button class="btn btn-sm btn-outline-danger"><i class="bi bi-trash"></i></button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>003</td>
+                      <td>María López</td>
+                      <td>Chaqueta Noir</td>
+                      <td>S</td>
+                      <td><span class="badge bg-success">Entregado</span></td>
+                      <td>
+                        <button class="btn btn-sm btn-outline-secondary me-1" data-bs-toggle="modal" data-bs-target="#editParticipantModal"><i class="bi bi-pencil"></i></button>
+                        <button class="btn btn-sm btn-outline-danger"><i class="bi bi-trash"></i></button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>004</td>
+                      <td>Diego Ramírez</td>
+                      <td>Blazer Urban</td>
+                      <td>XL</td>
+                      <td><span class="badge bg-danger">Cancelado</span></td>
+                      <td>
+                        <button class="btn btn-sm btn-outline-secondary me-1" data-bs-toggle="modal" data-bs-target="#editParticipantModal"><i class="bi bi-pencil"></i></button>
+                        <button class="btn btn-sm btn-outline-danger"><i class="bi bi-trash"></i></button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div id="inventario" class="card shadow-sm">
+            <div class="card-body">
+              <h2 class="h5 mb-3">Inventario reciente</h2>
+              <p class="text-muted mb-0">Revisa stock, nuevas colecciones y tendencias de compra.</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <div class="modal fade" id="editParticipantModal" tabindex="-1" aria-labelledby="editParticipantModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="editParticipantModalLabel">Editar pedido</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="participantName" class="form-label">Nombre completo</label>
+                <input type="text" class="form-control" id="participantName" value="Ana Serrano" />
+              </div>
+              <div class="mb-3">
+                <label for="participantCategory" class="form-label">Prenda</label>
+                <select class="form-select" id="participantCategory">
+                  <option selected>Camiseta Oversize</option>
+                  <option>Hoodie Street</option>
+                  <option>Chaqueta Noir</option>
+                  <option>Blazer Urban</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="participantStatus" class="form-label">Estado</label>
+                <select class="form-select" id="participantStatus">
+                  <option selected>Entregado</option>
+                  <option>Pendiente</option>
+                  <option>Cancelado</option>
+                </select>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-primary">Guardar cambios</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

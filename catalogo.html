@@ -1,0 +1,1300 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catálogo | Undergraun Apparel</title>
+    <link rel="icon" type="image/png" href="assets/assets/img/logo.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light shadow-sm border-bottom">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">Undergraun</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="catalogo.html">Catálogo</a></li>
+            <li class="nav-item"><a class="nav-link" href="app/login.html">Ingresar</a></li>
+            <li class="nav-item"><a class="nav-link" href="app/registro.html">Registrarse</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header del Catálogo -->
+    <header class="min-vh-100 d-flex align-items-center py-5 bg-light pt-5">
+      <div class="container py-5">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-8">
+            <p class="section-tag mb-3"><i class="bi bi-bag me-2"></i>Catálogo completo</p>
+            <h1 class="display-5 fw-bold mb-4">Explora la colección de ropa urbana de Undergraun</h1>
+            <p class="lead text-muted mb-4 w-75">
+              Descubre prendas para hombres y mujeres con estilo streetwear, cortes modernos y acabados que marcan la diferencia
+            </p>
+            <div class="d-flex gap-3">
+              <button type="button" class="btn btn-dark btn-lg" onclick="showSection('hombres')">
+                <i class="bi bi-person me-2"></i>Hombres
+              </button>
+              <button type="button" class="btn btn-outline-dark btn-lg" onclick="showSection('mujeres')">
+                <i class="bi bi-person-fill me-2"></i>Mujeres
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Sección Hombres -->
+      <section class="py-5" id="hombres">
+        <div class="container">
+          <div class="d-flex justify-content-between align-items-center mb-5">
+            <div>
+              <p class="section-tag mb-2"><i class="bi bi-person me-2"></i>Colección Hombres</p>
+              <h2 class="fw-bold">Streetwear Masculino</h2>
+            </div>
+            <span class="badge bg-dark-subtle text-dark fs-6 px-3 py-2">10 productos</span>
+          </div>
+          <div class="row g-4">
+            <!-- Producto 1 -->
+            <div class="col-sm-6 col-lg-3">
+              <article class="card h-100 border-0 shadow-sm overflow-hidden rounded-4 transition-all">
+                <img src="assets/assets/img/camiseta_1_oficcial.png" alt="Camiseta Void Crow" class="card-img-top object-fit-cover" style="height: 280px;" />
+                <div class="card-body p-4">
+                  <span class="badge bg-dark text-white mb-3">Nuevo</span>
+                  <h5 class="fw-bold mb-2">Void Crow</h5>
+                  <p class="text-muted small mb-3">Algodón premium con corte relajado. Perfecto para streetwear diario.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <strong class="fs-5">$89.990</strong>
+                    <div class="btn-group btn-group-sm">
+                      <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#inspectModal" onclick="showInspect('Void Crow', 'assets/assets/img/camiseta_3d_1.png', 'Algodón premium con corte relajado.')">
+                        <i class="bi bi-eye me-1"></i>Inspeccionar
+                      </button>
+                      <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#buyModal" onclick="setProduct('Void Crow', 'assets/assets/img/camiseta_3d_1.png', '89990')">
+                        <i class="bi bi-bag me-1"></i>Comprar
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="col-sm-6 col-lg-3">
+              <article class="card h-100 border-0 shadow-sm overflow-hidden rounded-4 transition-all">
+                <img src="assets/assets/img/camiseta_2_oficcial.png" alt="Camiseta Golden Era" class="card-img-top object-fit-cover" style="height: 280px;" />
+                <div class="card-body p-4">
+                  <span class="badge bg-dark text-white mb-3">Nuevo</span>
+                  <h5 class="fw-bold mb-2">Golden Era</h5>
+                  <p class="text-muted small mb-3">Diseño vintage con acabado premium. Edición limitada.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <strong class="fs-5">$89.990</strong>
+                    <div class="btn-group btn-group-sm">
+                      <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#inspectModal" onclick="showInspect('Golden Era', 'assets/assets/img/camiseta_3d_2.png', 'Diseño vintage con acabado premium. Edición limitada.')">
+                        <i class="bi bi-eye me-1"></i>Inspeccionar
+                      </button>
+                      <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#buyModal" onclick="setProduct('Golden Era', 'assets/assets/img/camiseta_3d_2.png', '89990')">
+                        <i class="bi bi-bag me-1"></i>Comprar
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="col-sm-6 col-lg-3">
+              <article class="card h-100 border-0 shadow-sm overflow-hidden rounded-4 transition-all">
+                <img src="assets/assets/img/camiseta_3d_1.png" alt="Camiseta Urban Spirit" class="card-img-top object-fit-cover" style="height: 280px;" />
+                <div class="card-body p-4">
+                  <span class="badge bg-primary text-white mb-3">Destacado</span>
+                  <h5 class="fw-bold mb-2">Urban Spirit</h5>
+                  <p class="text-muted small mb-3">Diseño 3D con relieve. Máxima comodidad y estilo.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <strong class="fs-5">$99.990</strong>
+                    <div class="btn-group btn-group-sm">
+                      <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#inspectModal" onclick="showInspect('Urban Spirit', 'assets/assets/img/camiseta_3d_1.png', 'Diseño 3D con relieve. Máxima comodidad y estilo.')">
+                        <i class="bi bi-eye me-1"></i>Inspeccionar
+                      </button>
+                      <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#buyModal" onclick="setProduct('Urban Spirit', 'assets/assets/img/camiseta_3d_1.png', '99990')">
+                        <i class="bi bi-bag me-1"></i>Comprar
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="col-sm-6 col-lg-3">
+              <article class="card h-100 border-0 shadow-sm overflow-hidden rounded-4 transition-all">
+                <img src="assets/assets/img/camiseta_3d_2.png" alt="Camiseta Night Mode" class="card-img-top object-fit-cover" style="height: 280px;" />
+                <div class="card-body p-4">
+                  <span class="badge bg-dark text-white mb-3">Nuevo</span>
+                  <h5 class="fw-bold mb-2">Night Mode</h5>
+                  <p class="text-muted small mb-3">Tono oscuro con detalles sutiles. Versátil y moderno.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <strong class="fs-5">$89.990</strong>
+                    <div class="btn-group btn-group-sm">
+                      <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#inspectModal" onclick="showInspect('Night Mode', 'assets/assets/img/camiseta_3d_2.png', 'Tono oscuro con detalles sutiles. Versátil y moderno.')">
+                        <i class="bi bi-eye me-1"></i>Inspeccionar
+                      </button>
+                      <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#buyModal" onclick="setProduct('Night Mode', 'assets/assets/img/camiseta_3d_2.png', '89990')">
+                        <i class="bi bi-bag me-1"></i>Comprar
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- Productos 5-10 (Repetidos con variedad visual) -->
+            <div class="col-sm-6 col-lg-3">
+              <article class="card h-100 border-0 shadow-sm overflow-hidden rounded-4 transition-all">
+                <img src="assets/assets/img/camiseta_1_oficcial.png" alt="Camiseta Street Legend" class="card-img-top object-fit-cover" style="height: 280px;" />
+                <div class="card-body p-4">
+                  <span class="badge bg-success text-white mb-3">Oferta</span>
+                  <h5 class="fw-bold mb-2">Street Legend</h5>
+                  <p class="text-muted small mb-3">Clásico reinventado para la generación actual.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <strong class="fs-5">$79.990</strong>
+                    <div class="btn-group btn-group-sm">
+                      <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#inspectModal" onclick="showInspect('Street Legend', 'assets/assets/img/camiseta_3d_1.png', 'Clásico reinventado para la generación actual.')">
+                        <i class="bi bi-eye me-1"></i>Inspeccionar
+                      </button>
+                      <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#buyModal" onclick="setProduct('Street Legend', 'assets/assets/img/camiseta_3d_1.png', '79990')">
+                        <i class="bi bi-bag me-1"></i>Comprar
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-sm-6 col-lg-3">
+              <article class="card h-100 border-0 shadow-sm overflow-hidden rounded-4 transition-all">
+                <img src="assets/assets/img/camiseta_2_oficcial.png" alt="Camiseta Elite Wear" class="card-img-top object-fit-cover" style="height: 280px;" />
+                <div class="card-body p-4">
+                  <span class="badge bg-dark text-white mb-3">Nuevo</span>
+                  <h5 class="fw-bold mb-2">Elite Wear</h5>
+                  <p class="text-muted small mb-3">Acabados premium para el hombre moderno.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <strong class="fs-5">$94.990</strong>
+                    <div class="btn-group btn-group-sm">
+                      <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#inspectModal" onclick="showInspect('Elite Wear', 'assets/assets/img/camiseta_3d_2.png', 'Acabados premium para el hombre moderno.')">
+                        <i class="bi bi-eye me-1"></i>Inspeccionar
+                      </button>
+                      <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#buyModal" onclick="setProduct('Elite Wear', 'assets/assets/img/camiseta_3d_2.png', '94990')">
+                        <i class="bi bi-bag me-1"></i>Comprar
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-sm-6 col-lg-3">
+              <article class="card h-100 border-0 shadow-sm overflow-hidden rounded-4 transition-all">
+                <img src="assets/assets/img/camiseta_3d_1.png" alt="Camiseta Urban Rebel" class="card-img-top object-fit-cover" style="height: 280px;" />
+                <div class="card-body p-4">
+                  <span class="badge bg-dark text-white mb-3">Nuevo</span>
+                  <h5 class="fw-bold mb-2">Urban Rebel</h5>
+                  <p class="text-muted small mb-3">Para quienes desafían las convenciones.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <strong class="fs-5">$89.990</strong>
+                    <div class="btn-group btn-group-sm">
+                      <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#inspectModal" onclick="showInspect('Urban Rebel', 'assets/assets/img/camiseta_3d_1.png', 'Para quienes desafían las convenciones.')">
+                        <i class="bi bi-eye me-1"></i>Inspeccionar
+                      </button>
+                      <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#buyModal" onclick="setProduct('Urban Rebel', 'assets/assets/img/camiseta_3d_1.png', '89990')">
+                        <i class="bi bi-bag me-1"></i>Comprar
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-sm-6 col-lg-3">
+              <article class="card h-100 border-0 shadow-sm overflow-hidden rounded-4 transition-all">
+                <img src="assets/assets/img/camiseta_3d_2.png" alt="Camiseta Midnight Vibes" class="card-img-top object-fit-cover" style="height: 280px;" />
+                <div class="card-body p-4">
+                  <span class="badge bg-primary text-white mb-3">Destacado</span>
+                  <h5 class="fw-bold mb-2">Midnight Vibes</h5>
+                  <p class="text-muted small mb-3">Colores profundos para personalidades fuertes.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <strong class="fs-5">$99.990</strong>
+                    <div class="btn-group btn-group-sm">
+                      <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#inspectModal" onclick="showInspect('Midnight Vibes', 'assets/assets/img/camiseta_3d_2.png', 'Colores profundos para personalidades fuertes.')">
+                        <i class="bi bi-eye me-1"></i>Inspeccionar
+                      </button>
+                      <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#buyModal" onclick="setProduct('Midnight Vibes', 'assets/assets/img/camiseta_3d_2.png', '99990')">
+                        <i class="bi bi-bag me-1"></i>Comprar
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-sm-6 col-lg-3">
+              <article class="card h-100 border-0 shadow-sm overflow-hidden rounded-4 transition-all">
+                <img src="assets/assets/img/camiseta_1_oficcial.png" alt="Camiseta Core Collection" class="card-img-top object-fit-cover" style="height: 280px;" />
+                <div class="card-body p-4">
+                  <span class="badge bg-success text-white mb-3">Oferta</span>
+                  <h5 class="fw-bold mb-2">Core Collection</h5>
+                  <p class="text-muted small mb-3">Lo esencial del streetwear moderno.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <strong class="fs-5">$74.990</strong>
+                    <div class="btn-group btn-group-sm">
+                      <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#inspectModal" onclick="showInspect('Core Collection', 'assets/assets/img/camiseta_3d_1.png', 'Lo esencial del streetwear moderno.')">
+                        <i class="bi bi-eye me-1"></i>Inspeccionar
+                      </button>
+                      <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#buyModal" onclick="setProduct('Core Collection', 'assets/assets/img/camiseta_3d_1.png', '74990')">
+                        <i class="bi bi-bag me-1"></i>Comprar
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-sm-6 col-lg-3">
+              <article class="card h-100 border-0 shadow-sm overflow-hidden rounded-4 transition-all">
+                <img src="assets/assets/img/camiseta_2_oficcial.png" alt="Camiseta Crown Essence" class="card-img-top object-fit-cover" style="height: 280px;" />
+                <div class="card-body p-4">
+                  <span class="badge bg-dark text-white mb-3">Nuevo</span>
+                  <h5 class="fw-bold mb-2">Crown Essence</h5>
+                  <p class="text-muted small mb-3">Lujo accesible con estilo urbano.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <strong class="fs-5">$104.990</strong>
+                    <div class="btn-group btn-group-sm">
+                      <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#inspectModal" onclick="showInspect('Crown Essence', 'assets/assets/img/camiseta_3d_2.png', 'Lujo accesible con estilo urbano.')">
+                        <i class="bi bi-eye me-1"></i>Inspeccionar
+                      </button>
+                      <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#buyModal" onclick="setProduct('Crown Essence', 'assets/assets/img/camiseta_3d_2.png', '104990')">
+                        <i class="bi bi-bag me-1"></i>Comprar
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección Mujeres -->
+      <section class="py-5 bg-light d-none" id="mujeres">
+        <div class="container">
+          <div class="d-flex justify-content-between align-items-center mb-5">
+            <div>
+              <p class="section-tag mb-2"><i class="bi bi-person-fill me-2"></i>Colección Mujeres</p>
+              <h2 class="fw-bold">Streetwear Femenino</h2>
+            </div>
+            <span class="badge bg-dark-subtle text-dark fs-6 px-3 py-2">10 productos</span>
+          </div>
+          <div class="row g-4">
+            <!-- Producto 1 -->
+            <div class="col-sm-6 col-lg-3">
+              <article class="card h-100 border-0 shadow-sm overflow-hidden rounded-4 transition-all">
+                <img src="assets/assets/img/camiseta_1_oficcial.png" alt="Camiseta Fem Urban" class="card-img-top object-fit-cover" style="height: 280px;" />
+                <div class="card-body p-4">
+                  <span class="badge bg-dark text-white mb-3">Nuevo</span>
+                  <h5 class="fw-bold mb-2">Fem Urban</h5>
+                  <p class="text-muted small mb-3">Corte femenino moderno con confort total.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <strong class="fs-5">$89.990</strong>
+                    <div class="btn-group btn-group-sm">
+                      <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#inspectModal" onclick="showInspect('Fem Urban', 'assets/assets/img/camiseta_3d_1.png', 'Corte femenino moderno con confort total.')">
+                        <i class="bi bi-eye me-1"></i>Inspeccionar
+                      </button>
+                      <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#buyModal" onclick="setProduct('Fem Urban', 'assets/assets/img/camiseta_3d_1.png', '89990')">
+                        <i class="bi bi-bag me-1"></i>Comprar
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="col-sm-6 col-lg-3">
+              <article class="card h-100 border-0 shadow-sm overflow-hidden rounded-4 transition-all">
+                <img src="assets/assets/img/camiseta_2_oficcial.png" alt="Camiseta Goddess Mode" class="card-img-top object-fit-cover" style="height: 280px;" />
+                <div class="card-body p-4">
+                  <span class="badge bg-dark text-white mb-3">Nuevo</span>
+                  <h5 class="fw-bold mb-2">Goddess Mode</h5>
+                  <p class="text-muted small mb-3">Elegancia con personalidad streetwear.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <strong class="fs-5">$89.990</strong>
+                    <div class="btn-group btn-group-sm">
+                      <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#inspectModal" onclick="showInspect('Goddess Mode', 'assets/assets/img/camiseta_3d_2.png', 'Elegancia con personalidad streetwear.')">
+                        <i class="bi bi-eye me-1"></i>Inspeccionar
+                      </button>
+                      <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#buyModal" onclick="setProduct('Goddess Mode', 'assets/assets/img/camiseta_3d_2.png', '89990')">
+                        <i class="bi bi-bag me-1"></i>Comprar
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="col-sm-6 col-lg-3">
+              <article class="card h-100 border-0 shadow-sm overflow-hidden rounded-4 transition-all">
+                <img src="assets/assets/img/camiseta_3d_1.png" alt="Camiseta Bold Ladies" class="card-img-top object-fit-cover" style="height: 280px;" />
+                <div class="card-body p-4">
+                  <span class="badge bg-primary text-white mb-3">Destacado</span>
+                  <h5 class="fw-bold mb-2">Bold Ladies</h5>
+                  <p class="text-muted small mb-3">Para mujeres con presencia e identidad propia.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <strong class="fs-5">$99.990</strong>
+                    <div class="btn-group btn-group-sm">
+                      <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#inspectModal" onclick="showInspect('Bold Ladies', 'assets/assets/img/camiseta_3d_1.png', 'Para mujeres con presencia e identidad propia.')">
+                        <i class="bi bi-eye me-1"></i>Inspeccionar
+                      </button>
+                      <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#buyModal" onclick="setProduct('Bold Ladies', 'assets/assets/img/camiseta_3d_1.png', '99990')">
+                        <i class="bi bi-bag me-1"></i>Comprar
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="col-sm-6 col-lg-3">
+              <article class="card h-100 border-0 shadow-sm overflow-hidden rounded-4 transition-all">
+                <img src="assets/assets/img/camiseta_3d_2.png" alt="Camiseta Rebel Spirit" class="card-img-top object-fit-cover" style="height: 280px;" />
+                <div class="card-body p-4">
+                  <spdiv class="btn-group btn-group-sm">
+                      <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#inspectModal" onclick="showInspect('Rebel Spirit', 'assets/assets/img/camiseta_3d_2.png', 'Diseño atrevido para personalidades fuertes.')">
+                        <i class="bi bi-eye me-1"></i>Inspeccionar
+                      </button>
+                      <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#buyModal" onclick="setProduct('Rebel Spirit', 'assets/assets/img/camiseta_3d_2.png', '89990')">
+                        <i class="bi bi-bag me-1"></i>Comprar
+                      </button>
+                    </divtext-muted small mb-3">Diseño atrevido para personalidades fuertes.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <strong class="fs-5">$89.990</strong>
+                    <button class="btn btn-sm btn-dark" data-bs-toggle="modal" data-bs-target="#buyModal" onclick="setProduct('Rebel Spirit', 'assets/assets/img/camiseta_3d_2.png', '89990')">
+                      <i class="bi bi-bag me-1"></i>Comprar
+                    </button>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- Productos 5-10 -->
+            <div class="col-sm-6 col-lg-3">
+              <article class="card h-100 border-0 shadow-sm overflow-hidden rounded-4 transition-all">
+                <img src="assets/assets/img/camiseta_1_oficcial.png" alt="Camiseta Chic Street" class="card-img-top object-fit-cover" style="height: 280px;" />
+                <div class="card-body p-4">
+                  <spdiv class="btn-group btn-group-sm">
+                      <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#inspectModal" onclick="showInspect('Chic Street', 'assets/assets/img/camiseta_3d_1.png', 'Sofisticación urbana accesible.')">
+                        <i class="bi bi-eye me-1"></i>Inspeccionar
+                      </button>
+                      <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#buyModal" onclick="setProduct('Chic Street', 'assets/assets/img/camiseta_3d_1.png', '79990')">
+                        <i class="bi bi-bag me-1"></i>Comprar
+                      </button>
+                    </divtext-muted small mb-3">Sofisticación urbana accesible.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <strong class="fs-5">$79.990</strong>
+                    <button class="btn btn-sm btn-dark" data-bs-toggle="modal" data-bs-target="#buyModal" onclick="setProduct('Chic Street', 'assets/assets/img/camiseta_3d_1.png', '79990')">
+                      <i class="bi bi-bag me-1"></i>Comprar
+                    </button>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-sm-6 col-lg-3">
+              <article class="card h-100 border-0 shadow-sm overflow-hidden rounded-4 transition-all">
+                <img src="assets/assets/img/camiseta_2_oficcial.png" alt="Camiseta Vibe Queens" class="card-img-top object-fit-cover" style="height: 280px;" />
+                <div class="card-body p-4">
+                  <spdiv class="btn-group btn-group-sm">
+                      <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#inspectModal" onclick="showInspect('Vibe Queens', 'assets/assets/img/camiseta_3d_2.png', 'Energía y estilo en una prenda.')">
+                        <i class="bi bi-eye me-1"></i>Inspeccionar
+                      </button>
+                      <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#buyModal" onclick="setProduct('Vibe Queens', 'assets/assets/img/camiseta_3d_2.png', '94990')">
+                        <i class="bi bi-bag me-1"></i>Comprar
+                      </button>
+                    </divtext-muted small mb-3">Energía y estilo en una prenda.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <strong class="fs-5">$94.990</strong>
+                    <button class="btn btn-sm btn-dark" data-bs-toggle="modal" data-bs-target="#buyModal" onclick="setProduct('Vibe Queens', 'assets/assets/img/camiseta_3d_2.png', '94990')">
+                      <i class="bi bi-bag me-1"></i>Comprar
+                    </button>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-sm-6 col-lg-3">
+              <article class="card h-100 border-0 shadow-sm overflow-hidden rounded-4 transition-all">
+                <img src="assets/assets/img/camiseta_3d_1.png" alt="Camiseta Power Fem" class="card-img-top object-fit-cover" style="height: 280px;" />
+                <div class="card-body p-4">
+                  <spdiv class="btn-group btn-group-sm">
+                      <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#inspectModal" onclick="showInspect('Power Fem', 'assets/assets/img/camiseta_3d_1.png', 'Empoderamiento a través del estilo.')">
+                        <i class="bi bi-eye me-1"></i>Inspeccionar
+                      </button>
+                      <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#buyModal" onclick="setProduct('Power Fem', 'assets/assets/img/camiseta_3d_1.png', '89990')">
+                        <i class="bi bi-bag me-1"></i>Comprar
+                      </button>
+                    </divtext-muted small mb-3">Empoderamiento a través del estilo.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <strong class="fs-5">$89.990</strong>
+                    <button class="btn btn-sm btn-dark" data-bs-toggle="modal" data-bs-target="#buyModal" onclick="setProduct('Power Fem', 'assets/assets/img/camiseta_3d_1.png', '89990')">
+                      <i class="bi bi-bag me-1"></i>Comprar
+                    </button>
+                  </div>
+                </div>
+              </article>
+            </div>
+div class="btn-group btn-group-sm">
+                      <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#inspectModal" onclick="showInspect('Night Essence', 'assets/assets/img/camiseta_3d_2.png', 'Misterio y elegancia en una prenda.')">
+                        <i class="bi bi-eye me-1"></i>Inspeccionar
+                      </button>
+                      <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#buyModal" onclick="setProduct('Night Essence', 'assets/assets/img/camiseta_3d_2.png', '99990')">
+                        <i class="bi bi-bag me-1"></i>Comprar
+                      </button>
+                    </div="card h-100 border-0 shadow-sm overflow-hidden rounded-4 transition-all">
+                <img src="assets/assets/img/camiseta_3d_2.png" alt="Camiseta Night Essence" class="card-img-top object-fit-cover" style="height: 280px;" />
+                <div class="card-body p-4">
+                  <span class="badge bg-primary text-white mb-3">Destacado</span>
+                  <h5 class="fw-bold mb-2">Night Essence</h5>
+                  <p class="text-muted small mb-3">Misterio y elegancia en una prenda.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <strong class="fs-5">$99.990</strong>
+                    <button class="btn btn-sm btn-dark" data-bs-toggle="modal" data-bs-target="#buyModal" onclick="setProduct('Night Essence', 'assets/assets/img/camiseta_3d_2.png', '99990')">
+                      <i class="bi bi-bag me-1"></i>Comprar
+                    </button>
+                  </div>
+                </div>
+              </article>
+            </div>
+div class="btn-group btn-group-sm">
+                      <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#inspectModal" onclick="showInspect('Minimal Girls', 'assets/assets/img/camiseta_3d_1.png', 'Simplicidad sofisticada con impacto.')">
+                        <i class="bi bi-eye me-1"></i>Inspeccionar
+                      </button>
+                      <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#buyModal" onclick="setProduct('Minimal Girls', 'assets/assets/img/camiseta_3d_1.png', '74990')">
+                        <i class="bi bi-bag me-1"></i>Comprar
+                      </button>
+                    </div="card h-100 border-0 shadow-sm overflow-hidden rounded-4 transition-all">
+                <img src="assets/assets/img/camiseta_1_oficcial.png" alt="Camiseta Minimal Girls" class="card-img-top object-fit-cover" style="height: 280px;" />
+                <div class="card-body p-4">
+                  <span class="badge bg-success text-white mb-3">Oferta</span>
+                  <h5 class="fw-bold mb-2">Minimal Girls</h5>
+                  <p class="text-muted small mb-3">Simplicidad sofisticada con impacto.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <strong class="fs-5">$74.990</strong>
+                    <button class="btn btn-sm btn-dark" data-bs-toggle="modal" data-bs-target="#buyModal" onclick="setProduct('Minimal Girls', 'assets/assets/img/camiseta_3d_1.png', '74990')">
+                      <i class="bi bi-bag me-1"></i>Comprar
+                    </button>
+                  </div>
+                </div>
+              </article>
+            </div>
+div class="btn-group btn-group-sm">
+                      <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#inspectModal" onclick="showInspect('Royal Crew', 'assets/assets/img/camiseta_3d_2.png', 'Realeza casual para el día a día.')">
+                        <i class="bi bi-eye me-1"></i>Inspeccionar
+                      </button>
+                      <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#buyModal" onclick="setProduct('Royal Crew', 'assets/assets/img/camiseta_3d_2.png', '104990')">
+                        <i class="bi bi-bag me-1"></i>Comprar
+                      </button>
+                    </div="card h-100 border-0 shadow-sm overflow-hidden rounded-4 transition-all">
+                <img src="assets/assets/img/camiseta_2_oficcial.png" alt="Camiseta Royal Crew" class="card-img-top object-fit-cover" style="height: 280px;" />
+                <div class="card-body p-4">
+                  <span class="badge bg-dark text-white mb-3">Nuevo</span>
+                  <h5 class="fw-bold mb-2">Royal Crew</h5>
+                  <p class="text-muted small mb-3">Realeza casual para el día a día.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <strong class="fs-5">$104.990</strong>
+                    <button class="btn btn-sm btn-dark" data-bs-toggle="modal" data-bs-target="#buyModal" onclick="setProduct('Royal Crew', 'assets/assets/img/camiseta_3d_2.png', '104990')">
+                      <i class="bi bi-bag me-1"></i>Comprar
+                    </button>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-5 border-top mt-5 bg-light">
+      <div class="container">
+        <div class="row gy-4 mb-4">
+          <div class="col-md-4">
+            <h5 class="fw-bold mb-3">Undergraun</h5>
+            <p class="text-muted">Moda urbana para quienes buscan destacar con estilo y exclusividad. Hecha en Medellín.</p>
+          </div>
+          <div class="col-md-4">
+            <h5 class="fw-bold mb-3">Enlaces</h5>
+            <ul class="list-unstyled text-muted">
+              <li class="mb-2"><a href="index.html" class="text-decoration-none text-muted">Inicio</a></li>
+              <li class="mb-2"><a href="catalogo.html" class="text-decoration-none text-muted">Catálogo</a></li>
+              <li><a href="app/login.html" class="text-decoration-none text-muted">Ingresar</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5 class="fw-bold mb-3">Contacto</h5>
+            <p class="text-muted mb-2"><i class="bi bi-telephone me-2"></i>+57 3205828750</p>
+            <p class="text-muted"><i class="bi bi-envelope me-2"></i>support@undergraun.com</p>
+          </div>
+        </div>
+        <hr />
+        <div class="text-center text-muted small">
+          <p class="mb-1">© Copyright 2026 - Undergraun Shop</p>
+          <p class="mb-0">Desarrollado por Jose David Marin</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modal Inspeccionar -->
+    <div class="modal fade" id="inspectModal" tabindex="-1" aria-labelledby="inspectModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content border-0 shadow-lg">
+          <div class="modal-header border-0">
+            <div>
+              <h5 class="modal-title fw-bold" id="inspectModalLabel">Vista detallada del producto</h5>
+              <p class="text-muted mb-0 small" id="inspectSubtitle">Void Crow</p>
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+          <div class="modal-body py-4">
+            <div class="row g-4 align-items-center">
+              <div class="col-lg-7">
+                <img id="inspectImage" src="assets/assets/img/camiseta_3d_1.png" class="img-fluid rounded-4" alt="Producto" style="max-height: 500px; object-fit: cover; width: 100%;" />
+              </div>
+              <div class="col-lg-5">
+                <h6 class="fw-bold text-muted mb-3">DESCRIPCIÓN DEL PRODUCTO</h6>
+                <p id="inspectDescription" class="text-muted mb-4">Descripción del producto aquí</p>
+                <div class="mb-4">
+                  <span class="badge bg-dark text-white">Algodón premium</span>
+                  <span class="badge bg-success text-white ms-2">En stock</span>
+                </div>
+                <div class="d-grid gap-2">
+                  <button class="btn btn-dark btn-lg" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#buyModal">
+                    <i class="bi bi-bag me-2"></i>Comprar ahora
+                  </button>
+                  <button class="btn btn-outline-secondary btn-lg" data-bs-dismiss="modal">
+                    Cerrar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Compra -->
+    <div class="modal fade" id="buyModal" tabindex="-1" aria-labelledby="buyModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0 shadow-lg">
+          <div class="modal-header border-0 pb-0">
+            <h5 class="modal-title fw-bold" id="buyModalLabel">
+              <i class="bi bi-bag-check me-2"></i>Confirmar compra
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+          <div class="modal-body">
+            <p class="mb-3">Estás comprando: <strong id="selectedProduct">Producto</strong></p>
+            <form id="buyForm">
+              <div class="mb-3">
+                <label for="sizeSelect" class="form-label fw-bold">Talla</label>
+                <select id="sizeSelect" class="form-select" required>
+                  <option value="">Selecciona una talla</option>
+                  <option value="XS">XS</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="XXL">XXL</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="checkoutName" class="form-label fw-bold">Nombre completo</label>
+                <input type="text" class="form-control" id="checkoutName" placeholder="Juan Pérez" required />
+              </div>
+              <div class="mb-3">
+                <label for="checkoutEmail" class="form-label fw-bold">Correo electrónico</label>
+                <input type="email" class="form-control" id="checkoutEmail" placeholder="correo@ejemplo.com" required />
+              </div>
+              <div class="mb-3">
+                <label for="paymentSelect" class="form-label fw-bold">Método de pago</label>
+                <select id="paymentSelect" class="form-select" required>
+                  <option value="">Selecciona un método</option>
+                  <option value="Tarjeta de crédito">Tarjeta de crédito</option>
+                  <option value="Transferencia bancaria">Transferencia bancaria</option>
+                  <option value="Efectivo contra entrega">Efectivo contra entrega</option>
+                </select>
+              </div>
+              <div id="cardFields" class="d-none">
+                <div class="mb-3">
+                  <label for="cardNumber" class="form-label fw-bold">Número de tarjeta</label>
+                  <input type="text" class="form-control" id="cardNumber" placeholder="1234 5678 9012 3456" />
+                </div>
+                <div class="row g-3 mb-3">
+                  <div class="col-md-6">
+                    <label for="cardExpiry" class="form-label fw-bold">Vencimiento</label>
+                    <input type="text" class="form-control" id="cardExpiry" placeholder="MM/AA" />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="cardCvv" class="form-label fw-bold">CVV</label>
+                    <input type="text" class="form-control" id="cardCvv" placeholder="123" />
+                  </div>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-dark w-100 btn-lg">Confirmar compra</button>
+            </form>
+            <div id="buyMessage" class="alert mt-3 d-none"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Cambiar entre secciones
+      function showSection(sectionId) {
+        const sections = ['hombres', 'mujeres'];
+        sections.forEach((id) => {
+          const section = document.getElementById(id);
+          if (section) {
+            if (id === sectionId) {
+              section.classList.remove('d-none');
+            } else {
+              section.classList.add('d-none');
+            }
+          }
+        });
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+
+      let selectedProductName = '';
+      let selectedProductPrice = '';
+      let selectedProductImage = '';
+
+      function setProduct(name, image, price) {
+        selectedProductName = name;
+        selectedProductPrice = price;
+        selectedProductImage = image;
+        document.getElementById('selectedProduct').textContent = `${name} · $${price}`;
+        document.getElementById('buyMessage').classList.add('d-none');
+        document.getElementById('buyForm').reset();
+      }
+
+      function showInspect(name, image, description) {
+        document.getElementById('inspectModalLabel').textContent = 'Vista detallada del producto';
+        document.getElementById('inspectSubtitle').textContent = name;
+        document.getElementById('inspectImage').src = image;
+        document.getElementById('inspectImage').alt = name;
+        document.getElementById('inspectDescription').textContent = description;
+      }
+
+      // Mostrar/ocultar campos de tarjeta
+      document.getElementById('paymentSelect').addEventListener('change', function () {
+        const cardFields = document.getElementById('cardFields');
+        if (this.value === 'Tarjeta de crédito') {
+          cardFields.classList.remove('d-none');
+        } else {
+          cardFields.classList.add('d-none');
+        }
+      });
+
+      // Procesar compra
+      document.getElementById('buyForm').addEventListener('submit', function (event) {
+        event.preventDefault();
+        const size = document.getElementById('sizeSelect').value;
+        const name = document.getElementById('checkoutName').value;
+        const email = document.getElementById('checkoutEmail').value;
+        const payment = document.getElementById('paymentSelect').value;
+        const message = document.getElementById('buyMessage');
+
+        if (!size || !name || !email || !payment) {
+          message.textContent = '⚠️ Por favor completa todos los campos requeridos.';
+          message.classList.remove('d-none', 'alert-success');
+          message.classList.add('alert-warning');
+          return;
+        }
+
+        message.innerHTML = `✅ ¡Compra confirmada! ${selectedProductName} · Talla ${size} · ${payment} · ${name}`;
+        message.classList.remove('d-none', 'alert-warning');
+        message.classList.add('alert-success');
+        
+        setTimeout(() => {
+          const modal = bootstrap.Modal.getInstance(document.getElementById('buyModal'));
+          modal.hide();
+        }, 2000);
+      });
+    </script>
+  </body>
+</html>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light shadow-sm border-bottom">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">Undergraun</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="catalogo.html">Catálogo</a></li>
+            <li class="nav-item"><a class="nav-link" href="app/login.html">Ingresar</a></li>
+            <li class="nav-item"><a class="nav-link" href="app/registro.html">Registrarse</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="min-vh-100 d-flex align-items-center py-5 bg-light">
+      <div class="container py-5">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-8">
+            <p class="section-tag mb-3">Catálogo completo</p>
+            <h1 class="display-5 fw-bold mb-4">Explora la coleccion de ropa urbana de Undergraun</h1>
+            <p class="lead text-muted mb-4 w-75">
+              Descubre prendas para hombres y mujeres con estilo streetwear, cortes modernos y acabados que marcan La diferencia
+            </p>
+            <button type="button" class="btn btn-dark btn-lg me-3" onclick="showSection('hombres')">Hombres</button>
+            <button type="button" class="btn btn-outline-dark btn-lg" onclick="showSection('mujeres')">Mujeres</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="py-5 catalog-hero" id="catalogo">
+        <div class="container">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-7">
+              <p class="section-tag mb-3">Catálogo premium</p>
+              <h2 class="fw-bold mb-3">Compra la ropa urbana que mejor define tu estilo</h2>
+              <p class="lead text-muted mb-4">Encuentra prendas seleccionadas para hombres y mujeres, con acabados premium, cortes modernos y detalles únicos.</p>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="catalog-pill">Envío rápido</span>
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <div class="card border-0 shadow-sm rounded-4 p-4">
+                <h5 class="fw-bold mb-3">¿Qué vas a encontrar?</h5>
+                <ul class="list-unstyled text-muted mb-0">
+                  <li class="mb-2"><i class="bi bi-check2-circle me-2"></i>Prendas cómodas y versátiles</li>
+                  <li><i class="bi bi-check2-circle me-2"></i>Diseño streetwear con identidad propia</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5" id="hombres">
+        <div class="container">
+          <div class="d-flex justify-content-between align-items-center mb-4">
+            <div>
+              <p class="section-tag mb-2">Hombres</p>
+              <h2 class="fw-bold">Colección masculina</h2>
+            </div>
+            <span class="catalog-pill">10 productos</span>
+          </div>
+          <div class="row g-4">
+            <div class="col-sm-6 col-lg-3">
+              <article class="product-card h-100 shadow-hover">
+                <img src="assets/assets/img/camiseta_1_oficcial.png" alt="Camiseta masculina streetwear" class="product-image" />
+                <div class="product-body p-4">
+                  <span class="product-badge">Nuevo</span>
+                  <h5 class="fw-bold mb-2">Void crow</h5>
+                  <p class="text-muted small mb-3">Algodón premium con corte relajado.</p>
+                  <div class="d-flex gap-2 flex-wrap justify-content-between align-items-center">
+                    <strong>$89.990</strong>
+                    <div class="btn-group">
+                      <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#inspectModal" onclick="showInspect('Void crow', 'assets/assets/img/camiseta_3d_1.png', 'Algodón premium con corte relajado.', '$89.990')">Inspeccionar</button>
+                      <button class="btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#buyModal" onclick="setProduct('Void crow', '89.990')">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <article class="product-card h-100 shadow-hover">
+                <img src="assets/assets/img/camiseta_2_oficcial.png" alt="Camiseta masculina streetwear" class="product-image" />
+                <div class="product-body p-4">
+                  <span class="product-badge">Nuevo</span>
+                  <h5 class="fw-bold mb-2">Golden era</h5>
+                  <p class="text-muted small mb-3">Algodón premium con corte relajado.</p>
+                  <div class="d-flex gap-2 flex-wrap justify-content-between align-items-center">
+                    <strong>$89.990</strong>
+                    <div class="btn-group">
+                      <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#inspectModal" onclick="showInspect('Golden era', 'assets/assets/img/camiseta_3d_2.png', 'Algodón premium con corte relajado.', '$89.990')">Inspeccionar</button>
+                      <button class="btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#buyModal" onclick="setProduct('Golden era', '89.990')">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <article class="product-card h-100 shadow-hover">
+                <img src="assets/assets/img/camiseta_1_oficcial.png" alt="Camiseta masculina streetwear" class="product-image" />
+                <div class="product-body p-4">
+                  <span class="product-badge">Nuevo</span>
+                  <h5 class="fw-bold mb-2">Void crow</h5>
+                  <p class="text-muted small mb-3">Algodón premium con corte relajado.</p>
+                  <div class="d-flex gap-2 flex-wrap justify-content-between align-items-center">
+                    <strong>$89.990</strong>
+                    <div class="btn-group">
+                      <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#inspectModal" onclick="showInspect('Void crow', 'assets/assets/img/camiseta_3d_1.png', 'Algodón premium con corte relajado.', '$89.990')">Inspeccionar</button>
+                      <button class="btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#buyModal" onclick="setProduct('Void crow', '89.990')">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <article class="product-card h-100 shadow-hover">
+                <img src="assets/assets/img/camiseta_1_oficcial.png" alt="Camiseta masculina streetwear" class="product-image" />
+                <div class="product-body p-4">
+                  <span class="product-badge">Nuevo</span>
+                  <h5 class="fw-bold mb-2">Void crow</h5>
+                  <p class="text-muted small mb-3">Algodón premium con corte relajado.</p>
+                  <div class="d-flex gap-2 flex-wrap justify-content-between align-items-center">
+                    <strong>$89.990</strong>
+                    <div class="btn-group">
+                      <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#inspectModal" onclick="showInspect('Void crow', 'assets/assets/img/camiseta_3d_1.png', 'Algodón premium con corte relajado.', '$89.990')">Inspeccionar</button>
+                      <button class="btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#buyModal" onclick="setProduct('Void crow', '89.990')">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <article class="product-card h-100 shadow-hover">
+                <img src="assets/assets/img/camiseta_1_oficcial.png" alt="Camiseta masculina streetwear" class="product-image" />
+                <div class="product-body p-4">
+                  <span class="product-badge">Nuevo</span>
+                  <h5 class="fw-bold mb-2">Void crow</h5>
+                  <p class="text-muted small mb-3">Algodón premium con corte relajado.</p>
+                  <div class="d-flex gap-2 flex-wrap justify-content-between align-items-center">
+                    <strong>$89.990</strong>
+                    <div class="btn-group">
+                      <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#inspectModal" onclick="showInspect('Void crow', 'assets/assets/img/camiseta_3d_1.png', 'Algodón premium con corte relajado.', '$89.990')">Inspeccionar</button>
+                      <button class="btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#buyModal" onclick="setProduct('Void crow', '89.990')">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <article class="product-card h-100 shadow-hover">
+                <img src="assets/assets/img/camiseta_1_oficcial.png" alt="Camiseta masculina streetwear" class="product-image" />
+                <div class="product-body p-4">
+                  <span class="product-badge">Nuevo</span>
+                  <h5 class="fw-bold mb-2">Void crow</h5>
+                  <p class="text-muted small mb-3">Algodón premium con corte relajado.</p>
+                  <div class="d-flex gap-2 flex-wrap justify-content-between align-items-center">
+                    <strong>$89.990</strong>
+                    <div class="btn-group">
+                      <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#inspectModal" onclick="showInspect('Void crow', 'assets/assets/img/camiseta_3d_1.png', 'Algodón premium con corte relajado.', '$89.990')">Inspeccionar</button>
+                      <button class="btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#buyModal" onclick="setProduct('Void crow', '89.990')">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <article class="product-card h-100 shadow-hover">
+                <img src="assets/assets/img/camiseta_1_oficcial.png" alt="Camiseta masculina streetwear" class="product-image" />
+                <div class="product-body p-4">
+                  <span class="product-badge">Nuevo</span>
+                  <h5 class="fw-bold mb-2">Void crow</h5>
+                  <p class="text-muted small mb-3">Algodón premium con corte relajado.</p>
+                  <div class="d-flex gap-2 flex-wrap justify-content-between align-items-center">
+                    <strong>$89.990</strong>
+                    <div class="btn-group">
+                      <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#inspectModal" onclick="showInspect('Void crow', 'assets/assets/img/camiseta_3d_1.png', 'Algodón premium con corte relajado.', '$89.990')">Inspeccionar</button>
+                      <button class="btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#buyModal" onclick="setProduct('Void crow', '89.990')">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <article class="product-card h-100 shadow-hover">
+                <img src="assets/assets/img/camiseta_1_oficcial.png" alt="Camiseta masculina streetwear" class="product-image" />
+                <div class="product-body p-4">
+                  <span class="product-badge">Nuevo</span>
+                  <h5 class="fw-bold mb-2">Void crow</h5>
+                  <p class="text-muted small mb-3">Algodón premium con corte relajado.</p>
+                  <div class="d-flex gap-2 flex-wrap justify-content-between align-items-center">
+                    <strong>$89.990</strong>
+                    <div class="btn-group">
+                      <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#inspectModal" onclick="showInspect('Void crow', 'assets/assets/img/camiseta_3d_1.png', 'Algodón premium con corte relajado.', '$89.990')">Inspeccionar</button>
+                      <button class="btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#buyModal" onclick="setProduct('Void crow', '89.990')">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <article class="product-card h-100 shadow-hover">
+                <img src="assets/assets/img/camiseta_1_oficcial.png" alt="Camiseta masculina streetwear" class="product-image" />
+                <div class="product-body p-4">
+                  <span class="product-badge">Nuevo</span>
+                  <h5 class="fw-bold mb-2">Void crow</h5>
+                  <p class="text-muted small mb-3">Algodón premium con corte relajado.</p>
+                  <div class="d-flex gap-2 flex-wrap justify-content-between align-items-center">
+                    <strong>$89.990</strong>
+                    <div class="btn-group">
+                      <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#inspectModal" onclick="showInspect('Void crow', 'assets/assets/img/camiseta_3d_1.png', 'Algodón premium con corte relajado.', '$89.990')">Inspeccionar</button>
+                      <button class="btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#buyModal" onclick="setProduct('Void crow', '89.990')">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <article class="product-card h-100 shadow-hover">
+                <img src="assets/assets/img/camiseta_1_oficcial.png" alt="Camiseta masculina streetwear" class="product-image" />
+                <div class="product-body p-4">
+                  <span class="product-badge">Nuevo</span>
+                  <h5 class="fw-bold mb-2">Void crow</h5>
+                  <p class="text-muted small mb-3">Algodón premium con corte relajado.</p>
+                  <div class="d-flex gap-2 flex-wrap justify-content-between align-items-center">
+                    <strong>$89.990</strong>
+                    <div class="btn-group">
+                      <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#inspectModal" onclick="showInspect('Void crow', 'assets/assets/img/camiseta_3d_1.png', 'Algodón premium con corte relajado.', '$89.990')">Inspeccionar</button>
+                      <button class="btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#buyModal" onclick="setProduct('Void crow', '89.990')">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5 bg-panel d-none" id="mujeres">
+        <div class="container">
+          <div class="d-flex justify-content-between align-items-center mb-4">
+            <div>
+              <p class="section-tag mb-2">Mujeres</p>
+              <h2 class="fw-bold">Colección femenina</h2>
+            </div>
+            <span class="catalog-pill">10 productos</span>
+          </div>
+          <div class="row g-4">
+            <div class="col-sm-6 col-lg-3">
+              <article class="product-card h-100 shadow-hover">
+                <img src="assets/assets/img/camiseta_1_oficcial.png" alt="Camiseta masculina streetwear" class="product-image" />
+                <div class="product-body p-4">
+                  <span class="product-badge">Nuevo</span>
+                  <h5 class="fw-bold mb-2">Void crow</h5>
+                  <p class="text-muted small mb-3">Algodón premium con corte relajado.</p>
+                  <div class="d-flex gap-2 flex-wrap justify-content-between align-items-center">
+                    <strong>$89.990</strong>
+                    <div class="btn-group">
+                      <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#inspectModal" onclick="showInspect('Void crow', 'assets/assets/img/camiseta_3d_1.png', 'Algodón premium con corte relajado.', '$89.990')">Inspeccionar</button>
+                      <button class="btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#buyModal" onclick="setProduct('Void crow', '89.990')">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <article class="product-card h-100 shadow-hover">
+                <img src="assets/assets/img/camiseta_1_oficcial.png" alt="Camiseta masculina streetwear" class="product-image" />
+                <div class="product-body p-4">
+                  <span class="product-badge">Nuevo</span>
+                  <h5 class="fw-bold mb-2">Void crow</h5>
+                  <p class="text-muted small mb-3">Algodón premium con corte relajado.</p>
+                  <div class="d-flex gap-2 flex-wrap justify-content-between align-items-center">
+                    <strong>$89.990</strong>
+                    <div class="btn-group">
+                      <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#inspectModal" onclick="showInspect('Void crow', 'assets/assets/img/camiseta_3d_1.png', 'Algodón premium con corte relajado.', '$89.990')">Inspeccionar</button>
+                      <button class="btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#buyModal" onclick="setProduct('Void crow', '89.990')">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <article class="product-card h-100 shadow-hover">
+                <img src="assets/assets/img/camiseta_1_oficcial.png" alt="Camiseta masculina streetwear" class="product-image" />
+                <div class="product-body p-4">
+                  <span class="product-badge">Nuevo</span>
+                  <h5 class="fw-bold mb-2">Void crow</h5>
+                  <p class="text-muted small mb-3">Algodón premium con corte relajado.</p>
+                  <div class="d-flex gap-2 flex-wrap justify-content-between align-items-center">
+                    <strong>$89.990</strong>
+                    <div class="btn-group">
+                      <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#inspectModal" onclick="showInspect('Void crow', 'assets/assets/img/camiseta_3d_1.png', 'Algodón premium con corte relajado.', '$89.990')">Inspeccionar</button>
+                      <button class="btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#buyModal" onclick="setProduct('Void crow', '89.990')">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <article class="product-card h-100 shadow-hover">
+                <img src="assets/assets/img/camiseta_1_oficcial.png" alt="Camiseta masculina streetwear" class="product-image" />
+                <div class="product-body p-4">
+                  <span class="product-badge">Nuevo</span>
+                  <h5 class="fw-bold mb-2">Void crow</h5>
+                  <p class="text-muted small mb-3">Algodón premium con corte relajado.</p>
+                  <div class="d-flex gap-2 flex-wrap justify-content-between align-items-center">
+                    <strong>$89.990</strong>
+                    <div class="btn-group">
+                      <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#inspectModal" onclick="showInspect('Void crow', 'assets/assets/img/camiseta_3d_1.png', 'Algodón premium con corte relajado.', '$89.990')">Inspeccionar</button>
+                      <button class="btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#buyModal" onclick="setProduct('Void crow', '89.990')">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <article class="product-card h-100 shadow-hover">
+                <img src="assets/assets/img/camiseta_1_oficcial.png" alt="Camiseta masculina streetwear" class="product-image" />
+                <div class="product-body p-4">
+                  <span class="product-badge">Nuevo</span>
+                  <h5 class="fw-bold mb-2">Void crow</h5>
+                  <p class="text-muted small mb-3">Algodón premium con corte relajado.</p>
+                  <div class="d-flex gap-2 flex-wrap justify-content-between align-items-center">
+                    <strong>$89.990</strong>
+                    <div class="btn-group">
+                      <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#inspectModal" onclick="showInspect('Void crow', 'assets/assets/img/camiseta_3d_1.png', 'Algodón premium con corte relajado.', '$89.990')">Inspeccionar</button>
+                      <button class="btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#buyModal" onclick="setProduct('Void crow', '89.990')">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <article class="product-card h-100 shadow-hover">
+                <img src="assets/assets/img/camiseta_1_oficcial.png" alt="Camiseta masculina streetwear" class="product-image" />
+                <div class="product-body p-4">
+                  <span class="product-badge">Nuevo</span>
+                  <h5 class="fw-bold mb-2">Void crow</h5>
+                  <p class="text-muted small mb-3">Algodón premium con corte relajado.</p>
+                  <div class="d-flex gap-2 flex-wrap justify-content-between align-items-center">
+                    <strong>$89.990</strong>
+                    <div class="btn-group">
+                      <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#inspectModal" onclick="showInspect('Void crow', 'assets/assets/img/camiseta_3d_1.png', 'Algodón premium con corte relajado.', '$89.990')">Inspeccionar</button>
+                      <button class="btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#buyModal" onclick="setProduct('Void crow', '89.990')">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <article class="product-card h-100 shadow-hover">
+                <img src="assets/assets/img/camiseta_1_oficcial.png" alt="Camiseta masculina streetwear" class="product-image" />
+                <div class="product-body p-4">
+                  <span class="product-badge">Nuevo</span>
+                  <h5 class="fw-bold mb-2">Void crow</h5>
+                  <p class="text-muted small mb-3">Algodón premium con corte relajado.</p>
+                  <div class="d-flex gap-2 flex-wrap justify-content-between align-items-center">
+                    <strong>$89.990</strong>
+                    <div class="btn-group">
+                      <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#inspectModal" onclick="showInspect('Void crow', 'assets/assets/img/camiseta_3d_1.png', 'Algodón premium con corte relajado.', '$89.990')">Inspeccionar</button>
+                      <button class="btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#buyModal" onclick="setProduct('Void crow', '89.990')">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <article class="product-card h-100 shadow-hover">
+                <img src="assets/assets/img/camiseta_1_oficcial.png" alt="Camiseta masculina streetwear" class="product-image" />
+                <div class="product-body p-4">
+                  <span class="product-badge">Nuevo</span>
+                  <h5 class="fw-bold mb-2">Void crow</h5>
+                  <p class="text-muted small mb-3">Algodón premium con corte relajado.</p>
+                  <div class="d-flex gap-2 flex-wrap justify-content-between align-items-center">
+                    <strong>$89.990</strong>
+                    <div class="btn-group">
+                      <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#inspectModal" onclick="showInspect('Void crow', 'assets/assets/img/camiseta_3d_1.png', 'Algodón premium con corte relajado.', '$89.990')">Inspeccionar</button>
+                      <button class="btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#buyModal" onclick="setProduct('Void crow', '89.990')">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="py-5">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-md-6">
+            <h5 class="fw-bold">Undergraun</h5>
+            <p class="text-light-50">Moda urbana para quienes buscan destacar con estilo y exclusividad.</p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <a href="index.html" class="footer-link text-decoration-none me-3">Inicio</a>
+            <a href="app/login.html" class="footer-link text-decoration-none me-3">Ingresar</a>
+            <a href="app/registro.html" class="footer-link text-decoration-none">Registrarse</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal fade" id="inspectModal" tabindex="-1" aria-labelledby="inspectModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content border-0 shadow-lg">
+          <div class="modal-header border-0">
+            <div>
+              <h5 class="modal-title fw-bold" id="inspectModalLabel">Vista detallada</h5>
+              <p class="text-muted mb-0" id="inspectSubtitle">Void crow · $89.990</p>
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+          <div class="modal-body py-0">
+            <div class="row g-0 align-items-center">
+              <div class="col-lg-7">
+                <img id="inspectImage" src="assets/assets/img/camiseta_3d_1.png" class="img-fluid rounded-3" alt="Vista detallada del producto" />
+              </div>
+              <div class="col-lg-5 p-4">
+                <h6 class="fw-semibold">Descripción</h6>
+                <p id="inspectDescription" class="text-muted">Algodón premium con corte relajado.</p>
+                <div class="mb-3">
+                  <span class="badge bg-dark text-white">Edición limitada</span>
+                </div>
+                <div class="mb-4">
+                  <strong class="fs-4">$89.990</strong>
+                </div>
+                <div class="d-grid gap-2">
+                  <button class="btn btn-dark btn-lg" data-bs-dismiss="modal" onclick="setProduct('Void crow', '89.990')" data-bs-toggle="modal" data-bs-target="#buyModal">Comprar ahora</button>
+                  <button class="btn btn-outline-secondary btn-lg" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="buyModal" tabindex="-1" aria-labelledby="buyModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title fw-bold" id="buyModalLabel">Confirmar compra</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+          <div class="modal-body">
+            <p class="mb-3">Estás a punto de comprar: <strong id="selectedProduct">Producto</strong></p>
+            <form id="buyForm">
+              <div class="mb-3">
+                <label for="sizeSelect" class="form-label">Talla</label>
+                <select id="sizeSelect" class="form-select" required>
+                  <option value="">Selecciona una talla</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="checkoutName" class="form-label">Nombre completo</label>
+                <input type="text" class="form-control" id="checkoutName" placeholder="Juan Pérez" required />
+              </div>
+              <div class="mb-3">
+                <label for="checkoutEmail" class="form-label">Correo electrónico</label>
+                <input type="email" class="form-control" id="checkoutEmail" placeholder="correo@ejemplo.com" required />
+              </div>
+              <div class="mb-3">
+                <label for="paymentSelect" class="form-label">Método de pago</label>
+                <select id="paymentSelect" class="form-select" required>
+                  <option value="">Selecciona un método</option>
+                  <option value="Tarjeta de crédito">Tarjeta de crédito</option>
+                  <option value="Transferencia bancaria">Transferencia bancaria</option>
+                  <option value="Pago en efectivo contra entrega">Pago en efectivo contra entrega</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="cardNumber" class="form-label">Número de tarjeta</label>
+                <input type="text" class="form-control" id="cardNumber" placeholder="1234 5678 9012 3456" />
+              </div>
+              <div class="row g-3 mb-3">
+                <div class="col-md-6">
+                  <label for="cardExpiry" class="form-label">Vencimiento</label>
+                  <input type="text" class="form-control" id="cardExpiry" placeholder="MM/AA" />
+                </div>
+                <div class="col-md-6">
+                  <label for="cardCvv" class="form-label">CVV</label>
+                  <input type="text" class="form-control" id="cardCvv" placeholder="123" />
+                </div>
+              </div>
+              <button type="submit" class="btn btn-dark w-100">Confirmar compra</button>
+            </form>
+            <div id="buyMessage" class="alert alert-success mt-3 d-none"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      function showSection(sectionId) {
+        const sections = ['hombres', 'mujeres'];
+        sections.forEach((id) => {
+          const section = document.getElementById(id);
+          if (section) {
+            section.classList.toggle('d-none', id !== sectionId);
+          }
+        });
+      }
+
+      let selectedProductName = '';
+      let selectedProductPrice = '';
+
+      function setProduct(name, price) {
+        selectedProductName = name;
+        selectedProductPrice = price;
+        document.getElementById('selectedProduct').textContent = `${name} · $${price}`;
+        document.getElementById('buyMessage').classList.add('d-none');
+        document.getElementById('buyForm').reset();
+      }
+
+      function showInspect(name, image, description, price) {
+        document.getElementById('inspectModalLabel').textContent = 'Vista detallada';
+        document.getElementById('inspectSubtitle').textContent = `${name} · ${price}`;
+        document.getElementById('inspectImage').src = image;
+        document.getElementById('inspectImage').alt = name;
+        document.getElementById('inspectDescription').textContent = description;
+      }
+
+      document.getElementById('buyForm').addEventListener('submit', function (event) {
+        event.preventDefault();
+        const size = document.getElementById('sizeSelect').value;
+        const name = document.getElementById('checkoutName').value;
+        const email = document.getElementById('checkoutEmail').value;
+        const payment = document.getElementById('paymentSelect').value;
+        const message = document.getElementById('buyMessage');
+
+        if (!size || !name || !email || !payment) {
+          message.textContent = 'Por favor completa talla, nombre, correo y método de pago.';
+          message.classList.remove('d-none', 'alert-success');
+          message.classList.add('alert-warning');
+          return;
+        }
+
+        message.textContent = `Compra confirmada: ${selectedProductName} · Talla ${size} · Pago ${payment} · Cliente ${name} · ${email}.`;
+        message.classList.remove('d-none', 'alert-warning');
+        message.classList.add('alert-success');
+      });
+    </script>
+  </body>
+</html>
