@@ -7,6 +7,13 @@
     <link rel="icon" type="image/png" href="assets/assets/img/logo.png" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+    <style>
+      .card-img-top {
+        max-height: 200px; /* Adjust as needed */
+        width: 100%;
+        object-fit: cover;
+      }
+    </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light shadow-sm border-bottom">
@@ -37,7 +44,7 @@
               Undergraun  trae prendas exclusivas con detalles que hacen la diferencia, siluetas modernas y materiales que perduran.</p>
             <div class="d-flex flex-wrap gap-3">
               <a href="catalogo.html" class="btn btn-dark btn-lg">Ver catálogo</a>
-              <a href="app/registro.html" class="btn btn-outline-dark btn-lg">Registrarme</a>
+              <a href="app/registro.html" class="btn btn-outline-dark btn-md">Registrarme</a>
             </div>
           </div>
           <div class="col-lg-6">
@@ -85,14 +92,17 @@
 
           <div class="row justify-content-center">
             <div class="col-md-6 col-lg-4">
-              <article class="card h-100 border-0 shadow-sm rounded-4">
+              <article class="card h-100 border-0 shadow-sm rounded-4 d-flex flex-column">
                 <img src="assets/assets/img/coleccion 1.png" alt="Hoodie Undergraun" class="card-img-top object-fit-cover" />
-                <div class="card-body p-4">
+                <div class="card-body p-4 d-flex flex-column flex-grow-1">
                   <span class="badge rounded-pill bg-dark-subtle text-dark">Nuevo</span>
                   <h5 class="fw-bold mb-2">UNDERGRAUN — VOL. I</h5>
                  <p class="text-muted small mb-3"> </p>"Toda leyenda comienza bajo la superficie"
                   </p>
-                    <a href="catalogo.html" class="btn btn-sm btn-outline-dark">Comprar</a>
+                      <div class="d-flex gap-2 mt-auto">
+                      <a href="catalogo.html" class="btn btn-sm btn-dark flex-fill">Comprar</a>
+                      <a href="catalogo.html" class="btn btn-sm btn-outline-secondary flex-fill">Inspeccionar</a>
+                    </div>
                   </div>
                 </div>
               </article>
