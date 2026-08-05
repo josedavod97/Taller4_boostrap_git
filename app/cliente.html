@@ -1,137 +1,178 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cliente | Undergraun</title>
-    <link rel="icon" type="image/png" href="../assets/assets/img/logo.png" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="../index.html">Undergraun</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarClient" aria-controls="navbarClient" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarClient">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
-            <li class="nav-item"><a class="nav-link" href="login.html">Ingresar</a></li>
-            <li class="nav-item"><a class="nav-link" href="registro.html">Registrarse</a></li>
-            <li class="nav-item"><a class="nav-link" href="recuperar.html">Recuperar</a></li>
-            <li class="nav-item"><a class="nav-link" href="admin.html">Admin</a></li>
-            <li class="nav-item"><a class="nav-link active" aria-current="page" href="cliente.html">Cliente</a></li>
-          </ul>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cliente | Undergraun</title>
+  <link rel="icon" type="image/png" href="../assets/assets/img/logo.png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html">Undergraun</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarClient"
+        aria-controls="navbarClient" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarClient">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="login.html">Ingresar</a></li>
+          <li class="nav-item"><a class="nav-link" href="registro.html">Registrarse</a></li>
+          <li class="nav-item"><a class="nav-link" href="recuperar.html">Recuperar</a></li>
+          <li class="nav-item"><a class="nav-link" href="admin.html">Admin</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="cliente.html">Cliente</a></li>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <main class="container py-5 pt-5">
-      <div class="row g-4">
-        <div class="col-12">
-          <div class="card shadow-sm border-0 overflow-hidden">
-            <div class="row g-0">
-              <div class="col-lg-4 bg-dark text-white p-4 d-flex flex-column justify-content-between">
-                <div>
-                  <span class="badge bg-light text-dark mb-3">Cliente premium</span>
-                  <h1 class="h3 mb-2">Valentina Ríos</h1>
-                  <p class="mb-4">Tu zona personal para revisar pedidos, favoritos y datos de envío.</p>
-                </div>
-                <div class="d-flex flex-wrap gap-2">
-                  <a href="../catalogo.html" class="btn btn-light btn-sm">Seguir comprando</a>
-                  <a href="login.html" class="btn btn-outline-light btn-sm">Cerrar sesión</a>
-                </div>
+  <main class="container py-5 pt-5">
+    <div class="row g-4">
+      <div class="col-12">
+        <div class="card shadow-sm border-0 overflow-hidden">
+          <div class="row g-0">
+            <div class="col-lg-4 bg-dark text-white p-4 d-flex flex-column justify-content-between">
+              <div>
+                <span class="badge bg-light text-dark mb-3">Cliente premium</span>
+                <h1 class="h3 mb-2" id="profileName">Nombre Cliente</h1>
+                <p class="mb-4" id="profileTagline">Tu zona personal para revisar pedidos, favoritos y datos de envío.
+                </p>
               </div>
-              <div class="col-lg-8 p-4">
-                <div class="row g-3">
-                  <div class="col-sm-4">
-                    <div class="border rounded-3 p-3 h-100">
-                      <div class="text-muted small">Compras</div>
-                      <div class="fs-4 fw-bold">12</div>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="border rounded-3 p-3 h-100">
-                      <div class="text-muted small">Favoritos</div>
-                      <div class="fs-4 fw-bold">6</div>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="border rounded-3 p-3 h-100">
-                      <div class="text-muted small">Puntos</div>
-                      <div class="fs-4 fw-bold">1.240</div>
-                    </div>
-                  </div>
-                </div>
+              <div class="d-flex flex-wrap gap-2">
+                <a href="../catalogo.html" class="btn btn-light btn-sm">
+                  <i class="bi bi-arrow-right-circle me-1"></i> Seguir comprando
+                </a>
+                <button id="logoutButton" class="btn btn-outline-light btn-sm">
+                  <i class="bi bi-box-arrow-right me-1"></i> Cerrar sesión
+                </button>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div class="col-lg-8">
-          <div class="card shadow-sm border-0 h-100">
-            <div class="card-body">
-              <div class="d-flex justify-content-between align-items-center mb-3">
-                <div>
-                  <h2 class="h5 mb-1">Tus pedidos recientes</h2>
-                  <p class="text-muted mb-0">Revisa rápidamente el estado de tus compras.</p>
-                </div>
-                <a href="../catalogo.html" class="btn btn-outline-dark btn-sm">Ver catálogo</a>
-              </div>
-              <div class="list-group list-group-flush">
-                <div class="list-group-item d-flex justify-content-between align-items-start">
-                  <div>
-                    <h6 class="mb-1">Camiseta Oversize</h6>
-                    <p class="mb-1 text-muted">Talla M · Envío hoy</p>
+            <div class="col-lg-8 p-4">
+              <div class="row g-3">
+                <div class="col-sm-4">
+                  <div class="border rounded-3 p-3 h-100">
+                    <div class="text-muted small">Compras</div>
+                    <div class="fs-4 fw-bold">12</div>
                   </div>
-                  <span class="badge bg-success rounded-pill">Entregado</span>
                 </div>
-                <div class="list-group-item d-flex justify-content-between align-items-start">
-                  <div>
-                    <h6 class="mb-1">Hoodie Street</h6>
-                    <p class="mb-1 text-muted">Talla L · En camino</p>
+                <div class="col-sm-4">
+                  <div class="border rounded-3 p-3 h-100">
+                    <div class="text-muted small">Favoritos</div>
+                    <div class="fs-4 fw-bold">6</div>
                   </div>
-                  <span class="badge bg-warning text-dark rounded-pill">Pendiente</span>
                 </div>
-                <div class="list-group-item d-flex justify-content-between align-items-start">
-                  <div>
-                    <h6 class="mb-1">Chaqueta Noir</h6>
-                    <p class="mb-1 text-muted">Talla S · Preparando envío</p>
+                <div class="col-sm-4">
+                  <div class="border rounded-3 p-3 h-100">
+                    <div class="text-muted small">Puntos</div>
+                    <div class="fs-4 fw-bold">1.240</div>
                   </div>
-                  <span class="badge bg-primary rounded-pill">Procesando</span>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4">
-          <div class="card shadow-sm border-0 mb-3">
-            <div class="card-body">
-              <h2 class="h6 mb-3">Datos de envío</h2>
-              <p class="mb-1 fw-semibold">Valentina Ríos</p>
-              <p class="mb-1 text-muted">Calle 45 #12-34, Medellin</p>
-              <p class="mb-1 text-muted">+57 3205828750</p>
-              <a href="#" class="btn btn-outline-dark btn-sm mt-3">Editar datos</a>
-            </div>
-          </div>
-
-          <div class="card shadow-sm border-0">
-            <div class="card-body">
-              <h2 class="h6 mb-3">Favoritos</h2>
-              <ul class="list-unstyled mb-0">
-                <li class="mb-2"><i class="bi bi-heart-fill text-danger me-2"></i>UNDERGRAUN — VOL. I</li>
-                <li class="mb-2"><i class="bi bi-heart-fill text-danger me-2"></i>UNDERGRAUN — VOL. II</li>
-                <li><i class="bi bi-heart-fill text-danger me-2"></i>UNDERGRAUN — VOL. III</li>
-              </ul>
             </div>
           </div>
         </div>
       </div>
-    </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+      <div class="col-lg-8">
+        <div class="card shadow-sm border-0 h-100">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <div>
+                <h2 class="h5 mb-1">Tus pedidos recientes</h2>
+                <p class="text-muted mb-0">Revisa rápidamente el estado de tus compras.</p>
+              </div>
+              <a href="../catalogo.html" class="btn btn-outline-dark btn-sm">
+                <i class="bi bi-cart me-1"></i> Ver catálogo
+              </a>
+            </div>
+            <div class="list-group list-group-flush">
+              <div class="list-group-item d-flex justify-content-between align-items-start">
+                <div>
+                  <h6 class="mb-1">Camiseta Oversize</h6>
+                  <p class="mb-1 text-muted">Talla M · Envío hoy</p>
+                </div>
+                <span class="badge bg-success rounded-pill">Entregado</span>
+              </div>
+              <div class="list-group-item d-flex justify-content-between align-items-start">
+                <div>
+                  <h6 class="mb-1">Hoodie Street</h6>
+                  <p class="mb-1 text-muted">Talla L · En camino</p>
+                </div>
+                <span class="badge bg-warning text-dark rounded-pill">Pendiente</span>
+              </div>
+              <div class="list-group-item d-flex justify-content-between align-items-start">
+                <div>
+                  <h6 class="mb-1">Chaqueta Noir</h6>
+                  <p class="mb-1 text-muted">Talla S · Preparando envío</p>
+                </div>
+                <span class="badge bg-primary rounded-pill">Procesando</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="card shadow-sm border-0 mb-3">
+          <div class="card-body" id="shippingInfoCard">
+            <h2 class="h6 mb-3">Datos de envío</h2>
+            <p class="mb-1 fw-semibold">Valentina Ríos</p>
+            <p class="mb-1 text-muted">Calle 45 #12-34, Medellin</p>
+            <p class="mb-1 text-muted">+57 3205828750</p>
+            <a href="#" class="btn btn-outline-dark btn-sm mt-3">
+              <i class="bi bi-pencil-square me-1"></i> Editar datos
+            </a>
+          </div>
+        </div>
+
+        <div class="card shadow-sm border-0">
+          <div class="card-body">
+            <h2 class="h6 mb-3">Favoritos</h2>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-2"><i class="bi bi-heart-fill text-danger me-2"></i>UNDERGRAUN — VOL. I</li>
+              <li class="mb-2"><i class="bi bi-heart-fill text-danger me-2"></i>UNDERGRAUN — VOL. II</li>
+              <li><i class="bi bi-heart-fill text-danger me-2"></i>UNDERGRAUN — VOL. III</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const user = JSON.parse(localStorage.getItem('undergraunUser') || 'null');
+    if (!user || user.role !== 'cliente') {
+      window.location.href = 'login.html';
+    } else {
+      document.getElementById('profileName').textContent = user.name;
+      document.getElementById('profileTagline').textContent = `Bienvenido a tu espacio, ${user.name}. Aquí está tu perfil y el estado de tus compras en Undergraun.`;
+      document.getElementById('logoutButton').addEventListener('click', () => {
+        localStorage.removeItem('undergraunUser');
+        window.location.href = 'login.html';
+      });
+
+      const shippingDetails = document.getElementById('shippingInfoCard');
+      if (shippingDetails) {
+        shippingDetails.innerHTML = `
+          <h2 class="h6 mb-3">Datos de envío</h2>
+          <p class="mb-1 fw-semibold">${user.name}</p>
+          <p class="mb-1 text-muted">Ciudad: ${user.city || 'No registrada'}</p>
+          <p class="mb-1 text-muted">Cédula: ${user.document || '-'}</p>
+          <p class="mb-1 text-muted">${user.email}</p>
+          <p class="mb-1 text-muted">${user.phone || 'Sin teléfono registrado'}</p>
+          <a href="#" class="btn btn-outline-dark btn-sm mt-3">
+            <i class="bi bi-pencil-square me-1"></i> Editar datos
+          </a>
+        `;
+      }
+    }
+  </script>
+</body>
+
 </html>

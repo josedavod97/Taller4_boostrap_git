@@ -1,115 +1,126 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Undergraun shop | Moda urbana</title>
-    <link rel="icon" type="image/png" href="assets/assets/img/logo.png" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
-    <style>
-      .card-img-top {
-        max-height: 200px; /* Adjust as needed */
-        width: 100%;
-        object-fit: cover;
-      }
-    </style>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light shadow-sm border-bottom">
-      <div class="container">
-        <a class="navbar-brand fw-bold" href="index.html">Undergraun | CEO Jose David Marin</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="mainNavbar">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Inicio</a></li>
-            <li class="nav-item"><a class="nav-link" href="catalogo.html">Catálogo</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
-            <li class="nav-item"><a class="nav-link" href="app/login.html">Ingresar</a></li>
-            <li class="nav-item"><a class="nav-link" href="app/registro.html">Registrarse</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
 
-    <header class="min-vh-100 d-flex align-items-center py-5 bg-light">
-      <div class="container py-5">
-        <div class="row align-items-center g-5">
-          <div class="col-lg-6">
-            <p class="section-tag mb-3">Colección urbana 2026</p>
-            <h1 class="display-4 fw-bold mb-4">Streetwear moderno hecho en Medellin</h1>
-            <p class="lead text-muted mb-4 w-75">
-              Undergraun  trae prendas exclusivas con detalles que hacen la diferencia, siluetas modernas y materiales que perduran.</p>
-            <div class="d-flex flex-wrap gap-3">
-              <a href="catalogo.html" class="btn btn-dark btn-lg">Ver catálogo</a>
-              <a href="app/registro.html" class="btn btn-outline-dark btn-md">Registrarme</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Undergraun shop | Moda urbana</title>
+  <link rel="icon" type="image/png" href="assets/assets/img/logo.png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+  <style>
+    .card-img-top {
+      max-height: 200px;
+      /* Adjust as needed */
+      width: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light shadow-sm border-bottom">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Undergraun | CEO Jose David Marin</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+        aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="catalogo.html">Catálogo</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link" href="app/login.html">Ingresar</a></li>
+          <li class="nav-item"><a class="nav-link" href="app/registro.html">Registrarse</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="min-vh-100 d-flex align-items-center py-5 bg-light">
+    <div class="container py-5">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <p class="section-tag mb-3">Colección urbana 2026</p>
+          <h1 class="display-4 fw-bold mb-4">Streetwear moderno hecho en Medellin</h1>
+          <p class="lead text-muted mb-4 w-75">
+            Undergraun trae prendas exclusivas con detalles que hacen la diferencia, siluetas modernas y materiales que
+            perduran.</p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="catalogo.html" class="btn btn-dark btn-lg">Ver catálogo</a>
+            <a href="app/registro.html" class="btn btn-outline-dark btn-md">Registrarme</a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card border-0 shadow-lg overflow-hidden rounded-4 p-0">
+            <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="assets/assets/img/logo.png" class="d-block w-100 object-fit-cover"
+                    alt="Logo de Undergraun" />
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/assets/img/tienda.png" class="d-block w-100 object-fit-cover"
+                    alt="Tienda de Undergraun" />
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/assets/img/interior.png" class="d-block w-100 object-fit-cover"
+                    alt="Interior de la tienda Undergraun" />
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+              </button>
             </div>
           </div>
-          <div class="col-lg-6">
-            <div class="card border-0 shadow-lg overflow-hidden rounded-4 p-0">
-              <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="assets/assets/img/logo.png" class="d-block w-100 object-fit-cover" alt="Logo de Undergraun" />
-                  </div>
-                  <div class="carousel-item">
-                    <img src="assets/assets/img/tienda.png" class="d-block w-100 object-fit-cover" alt="Tienda de Undergraun" />
-                  </div>
-                  <div class="carousel-item">
-                    <img src="assets/assets/img/interior.png" class="d-block w-100 object-fit-cover" alt="Interior de la tienda Undergraun" />
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Anterior</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Siguiente</span>
-                </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="py-5" id="coleccion">
+
+      <div class="text-center mb-5">
+        <p class="section-tag mb-2">Tienda</p>
+        <h2 class="fw-bold">Colecciónes</h2>
+        <p class="text-muted mx-auto w-75">Piezas seleccionadas para quienes buscan un estilo urbano con mucha
+          presencia.</p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-4">
+          <article class="card h-100 border-0 shadow-sm rounded-4 d-flex flex-column">
+            <img src="assets/assets/img/coleccion 1.png" alt="Hoodie Undergraun"
+              class="card-img-top object-fit-cover" />
+            <div class="card-body p-4 d-flex flex-column flex-grow-1">
+              <span class="badge rounded-pill bg-dark-subtle text-dark">Nuevo</span>
+              <h5 class="fw-bold mb-2">UNDERGRAUN — VOL. I</h5>
+              <p class="text-muted small mb-3"> </p>"Toda leyenda comienza bajo la superficie"
+              </p>
+              <div class="d-flex gap-2 mt-auto">
+                <a href="catalogo.html" class="btn btn-sm btn-dark flex-fill">Comprar</a>
+                <a href="catalogo.html" class="btn btn-sm btn-outline-secondary flex-fill">Inspeccionar</a>
               </div>
             </div>
-          </div>
         </div>
+        </article>
       </div>
-    </header>
+      </div>
 
-    <main>
-      <section class="py-5" id="coleccion">
-       
-          <div class="text-center mb-5">
-            <p class="section-tag mb-2">Tienda</p>
-            <h2 class="fw-bold">Colecciónes</h2>
-            <p class="text-muted mx-auto w-75">Piezas seleccionadas para quienes buscan un estilo urbano con mucha presencia.</p>
-          </div>
 
-          <div class="row justify-content-center">
-            <div class="col-md-6 col-lg-4">
-              <article class="card h-100 border-0 shadow-sm rounded-4 d-flex flex-column">
-                <img src="assets/assets/img/coleccion 1.png" alt="Hoodie Undergraun" class="card-img-top object-fit-cover" />
-                <div class="card-body p-4 d-flex flex-column flex-grow-1">
-                  <span class="badge rounded-pill bg-dark-subtle text-dark">Nuevo</span>
-                  <h5 class="fw-bold mb-2">UNDERGRAUN — VOL. I</h5>
-                 <p class="text-muted small mb-3"> </p>"Toda leyenda comienza bajo la superficie"
-                  </p>
-                      <div class="d-flex gap-2 mt-auto">
-                      <a href="catalogo.html" class="btn btn-sm btn-dark flex-fill">Comprar</a>
-                      <a href="catalogo.html" class="btn btn-sm btn-outline-secondary flex-fill">Inspeccionar</a>
-                    </div>
-                  </div>
-                </div>
-              </article>
-            </div>
-          </div>
-
-      
 
       <section class="py-5" id="contacto">
         <div class="container">
@@ -130,15 +141,16 @@
           </div>
         </div>
       </section>
-    </main>
+  </main>
 
-    <footer class="py-4 border-top mt-5">
-      <div class="container text-center text-muted small">
-        <p class="mb-1">© Copyright 2026 - Desarrollador Jose David Marin</p>
-        <p class="mb-0">Undergraun</p>
-      </div>
-    </footer>
+  <footer class="py-4 border-top mt-5">
+    <div class="container text-center text-muted small">
+      <p class="mb-1">© Copyright 2026 - Desarrollador Jose David Marin</p>
+      <p class="mb-0">Undergraun</p>
+    </div>
+  </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>

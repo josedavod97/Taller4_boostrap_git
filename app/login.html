@@ -1,91 +1,128 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ingresar | Undergraun</title>
-    <link rel="icon" type="image/png" href="../assets/assets/img/logo.png" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
-  </head>
-  <body class="bg-light">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="../index.html">Undergraun</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarAuth" aria-controls="navbarAuth" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarAuth">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
-            <li class="nav-item"><a class="nav-link active" aria-current="page" href="login.html">Ingresar</a></li>
-            <li class="nav-item"><a class="nav-link" href="registro.html">Registrarse</a></li>
-            <li class="nav-item"><a class="nav-link" href="recuperar.html">Recuperar</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
 
-    <main class="d-flex align-items-center min-vh-100 py-5">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-5 col-md-7">
-            <div class="card shadow-sm border-0">
-              <div class="card-body p-4">
-                <div class="text-center mb-4">
-                  <i class="bi bi-shield-lock-fill fs-1 text-primary"></i>
-                  <h2 class="h4 mt-3">Bienvenido a Undergraun</h2>
-                  <p class="text-muted mb-0">Ingresa con tu correo y contraseña para acceder al panel de la tienda.</p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ingresar | Undergraun</title>
+  <link rel="icon" type="image/png" href="../assets/assets/img/logo.png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+</head>
+
+<body class="bg-light">
+  <script>
+    const authUser = JSON.parse(localStorage.getItem('undergraunUser') || 'null');
+    if (authUser) {
+      window.location.href = authUser.role === 'admin' ? 'admin.html' : 'cliente.html';
+    }
+  </script>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">Undergraun</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarAuth"
+        aria-controls="navbarAuth" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarAuth">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="login.html">Ingresar</a></li>
+          <li class="nav-item"><a class="nav-link" href="registro.html">Registrarse</a></li>
+          <li class="nav-item"><a class="nav-link" href="recuperar.html">Recuperar</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="d-flex align-items-center min-vh-100 py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-5 col-md-7">
+          <div class="card shadow-sm border-0">
+            <div class="card-body p-4">
+              <div class="text-center mb-4">
+                <i class="bi bi-shield-lock-fill fs-1 text-primary"></i>
+                <h2 class="h4 mt-3">Bienvenido a Undergraun</h2>
+                <p class="text-muted mb-0">Ingresa con tu correo y contraseña para acceder al panel de la tienda.</p>
+              </div>
+              <form id="loginForm">
+                <div class="form-floating mb-3">
+                  <input type="email" class="form-control" id="email" placeholder="correo@ejemplo.com"
+                    autocomplete="email" required />
+                  <label for="email">Correo electrónico</label>
                 </div>
-                <form id="loginForm">
-                  <div class="form-floating mb-3">
-                    <input type="email" class="form-control" id="email" placeholder="correo@ejemplo.com" autocomplete="email" required />
-                    <label for="email">Correo electrónico</label>
-                  </div>
-                  <div class="form-floating mb-3">
-                    <input type="password" class="form-control" id="password" placeholder="Contraseña" autocomplete="current-password" required />
-                    <label for="password">Contraseña</label>
-                  </div>
-                  <div class="form-check mb-4">
-                    <input class="form-check-input" type="checkbox" value="" id="rememberMe" />
-                    <label class="form-check-label" for="rememberMe">Recordarme</label>
-                  </div>
-                  <button type="submit" class="btn btn-primary w-100 mb-3">Ingresar</button>
-                  <div id="loginMessage" class="alert alert-danger d-none mt-2" role="alert"></div>
-                </form>
-                <div class="d-flex justify-content-between small">
-                  <a href="recuperar.html">¿Olvidaste tu contraseña?</a>
-                  <a href="registro.html">Crear cuenta</a>
+                <div class="form-floating mb-3">
+                  <input type="password" class="form-control" id="password" placeholder="Contraseña"
+                    autocomplete="current-password" required />
+                  <label for="password">Contraseña</label>
                 </div>
+                <div class="form-check mb-4">
+                  <input class="form-check-input" type="checkbox" value="" id="rememberMe" />
+                  <label class="form-check-label" for="rememberMe">Recordarme</label>
+                </div>
+                <button type="submit" class="btn btn-primary w-100 mb-3">Ingresar</button>
+                <div id="loginMessage" class="alert alert-danger d-none mt-2" role="alert"></div>
+              </form>
+              <div class="d-flex justify-content-between small">
+                <a href="recuperar.html">¿Olvidaste tu contraseña?</a>
+                <a href="registro.html">Crear cuenta</a>
               </div>
             </div>
-            <div class="text-center mt-3 text-muted small">
-              <span><i class="bi bi-info-circle"></i> Tu acceso está protegido con Bootstrap.</span>
-            </div>
+          </div>
+          <div class="text-center mt-3 text-muted small">
+            <span><i class="bi bi-info-circle"></i> Tu acceso está protegido con Bootstrap.</span>
           </div>
         </div>
       </div>
-    </main>
+    </div>
+  </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-      const adminEmail = 'josedavidmarin311@gmail.com';
-      const adminPassword = '3205828750jJ$';
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById('loginForm').addEventListener('submit', async function (event) {
+      event.preventDefault();
 
-      document.getElementById('loginForm').addEventListener('submit', function (event) {
-        event.preventDefault();
+      const email = document.getElementById('email').value.trim();
+      const password = document.getElementById('password').value;
+      const message = document.getElementById('loginMessage');
 
-        const email = document.getElementById('email').value.trim();
-        const password = document.getElementById('password').value;
-        const message = document.getElementById('loginMessage');
+      try {
+        const res = await fetch('http://localhost:3000/login', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email, password })
+        });
 
-        if (email === adminEmail && password === adminPassword) {
+        const data = await res.json();
+        if (!res.ok) {
+          message.textContent = data.error || 'Error al ingresar.';
+          message.classList.remove('d-none');
+          return;
+        }
+
+        const profile = {
+          id: data.cliente.id_cliente,
+          name: `${data.cliente.nombres} ${data.cliente.apellidos}`,
+          email: data.cliente.email,
+          phone: data.cliente.telefono,
+          city: data.cliente.ciudad,
+          document: data.cliente.documento,
+          role: data.admin ? 'admin' : 'cliente'
+        };
+        localStorage.setItem('undergraunUser', JSON.stringify(profile));
+
+        if (data.admin) {
           window.location.href = 'admin.html';
         } else {
-          message.textContent = 'Correo o contraseña incorrectos.';
-          message.classList.remove('d-none');
+          window.location.href = 'cliente.html';
         }
-      });
-    </script>
-  </body>
+      } catch (err) {
+        message.textContent = 'Error de conexión: ' + err.message;
+        message.classList.remove('d-none');
+      }
+    });
+  </script>
+</body>
+
 </html>
